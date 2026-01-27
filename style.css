@@ -56,3 +56,14 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 15px;
+}
