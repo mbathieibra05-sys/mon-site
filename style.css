@@ -26,10 +26,16 @@ header p {
 .btn {
   background-color: #c9a24d;
   color: #111;
-  padding: 12px 25px;
+  padding: 14px 30px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 section {
@@ -40,6 +46,13 @@ h2 {
   color: #111;
   margin-bottom: 20px;
 }
+h3 {
+  color: #c9a24d;
+}
+
+strong {
+  font-size: 18px;
+}
 
 ul {
   list-style: none;
@@ -48,6 +61,14 @@ ul {
 
 ul li {
   padding: 10px 0;
+}
+input, textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
 footer {
@@ -67,3 +88,57 @@ footer {
   width: 250px;
   border-radius: 15px;
 }
+img {
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header, section {
+  animation: fadeUp 1s ease forwards;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+section, header {
+  animation: fadeUp 1s ease forwards;
+}
+
+.btn {
+  background: linear-gradient(135deg, #c9a24d, #f1d27a);
+  color: #111;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
